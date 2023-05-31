@@ -3,9 +3,9 @@
 
 <body>
 
-<h1>Regular Function</h1>
+<h1>Arrow Function</h1>
 
-<p>The <strong>this</strong> keyword represents different objects depending on how the function was called.</p>
+<p>The <strong>this</strong> keyword represents the Header object.</p>
 
 <button id="btn">Click Me!</button>
 
@@ -13,15 +13,14 @@
 
 <p id="demo"></p>
 
-<p>See the difference before and after the button is clicked.</p>
-  
+ 
 <script>
 class Header {
   constructor() {
     this.color = "Red";
   }
 
-  changeColor = function() {
+  changeColor = () => {
     document.getElementById("demo").innerHTML += this;
   }
 }
